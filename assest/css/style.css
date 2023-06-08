@@ -1613,7 +1613,13 @@ p {
     transition: height .4s ease, padding .4s ease, margin .4s ease, opacity .3s ease;
   }
 
-  #logo img { max-height: 100%; }
+  #logo img { max-height: 70%;
+  padding: 10px; }
+
+  @media (max-width: 428px) {
+    #logo img { max-height: 30%;
+      padding: 10px; }
+  }
 
   .sub-menu-container,
   .mega-menu-content {
@@ -4195,8 +4201,14 @@ div.tagcloud a:hover {
 }
 
 .footer-img img {
-  width: 140px;
+  width: 170px;
   /* margin-bottom: 30px; */
+}
+
+@media (max-width: 428px) {
+  .footer-img img {
+    width: 80px;
+  }
 }
 
 @media sm {
