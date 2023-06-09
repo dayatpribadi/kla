@@ -10673,8 +10673,8 @@ homepage styles
   z-index: 999;
 }
 .hello {
-  position: absolute;
   top: 12%;
+  position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4vw;
@@ -10732,5 +10732,27 @@ homepage styles
   }
   0%, 90%, 100% {
     transform: translate(-50%, -45%) scale(0.95);
+  }
+}
+
+@media (max-width: 412px) {
+  .text-kong {
+    z-index: 999;
+  }
+  .hello {
+    top: 10%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+    -webkit-animation-name: wave;
+            animation-name: wave;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    font-family: "Righteous", cursive;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
   }
 }
